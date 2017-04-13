@@ -3,50 +3,27 @@ public class WorldTraveler {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		//initial value
-		int circumference =24902;
-		int travelSpeed = 352;
-		int timeHour = 10583;
-		
-		int initialTraveled = (travelSpeed*timeHour);
-		
-		int transversal = (circumference/travelSpeed); //transversal in interger form
-		
-		int totalAmount = (initialTraveled/circumference); //Total amount of transversals in an interger value
-		
-		int 
-		
-		int secondTravelspeed = 483; //Total amount of transversals in an interger value
-		int secondTransversal = (circumference/secondTravelspeed);
-		int secondtotalAmount = (timeHour/secondTransversal);
-		
-		
-		double traveled = (travelSpeed*timeHour);
-		double doubletotalAmount = (initialTraveled/circumference);
+		//initial integers
+		int circumference = 24902;
+		int hour = 10583;
+		int speed = 352;
+		//total traveled area (first part)
+		int traveled = speed*hour;
+		//total amount of traversals
+		double traversal = traveled/circumference;
+		//remainder after traveled traversals
+		double remainder = traveled%circumference;
+		//changed version of initial values (third part)
+		int secondSpeed = 483;
+		//total traveled area after changed initial values
+		int secondTraveled = secondSpeed*hour;
+		//total amount of traversals after changed initial values
+		double secondTraversal = secondTraveled/circumference;
 		
 		
-		
-		//time for each traversal and final value (In double form)
-		double doubletdoubleTransversal = circumference/travelSpeed;
-		double totalAmountDouble = (timeHour/doubleTransversal);
-		double remainder = (totalAmountDouble-totalAmount);
-		//double remainderMiles = (circumference*remainder);
-	
-		//integer form for each transversal and final value
-		int intDoubleTransversal = circumference/travelSpeed;
-		int intTotalAmount = (timeHour/intDoubleTransversal);
-		double intRemainder = (intTotalAmount-totalAmount);
-		//int intRemainderMiles = (circumference*intRemainder);
-		
-		//Total amount of traversals from 352 mph travel speed
-		//System.out.println("Going 352 mph, you could travel " + totalAmountDouble + " transversals.");
-		System.out.println("Going 352 mph, you could travel " + totalAmount + " transversals.");
-		
-		//Total remainder from traversal (Extra in miles)
-		//System.out.println("Extra miles traveled " + remainderMiles + " miles." );
-		//System.out.println("Extra miles traveled " + intRemainderMiles  + " miles.");
-		//Total amount of traversals from 483 mph travel speed
-		//System.out.println("Going 483 mph, you could travel " + secondtotalAmount + " transversals.");
+		System.out.println("Going 352 mpg, you could complete " + traversal + " traversals");
+		System.out.println("Extra miles traveled: " + remainder);		
+		System.out.println("Going 483 mph, your could complete " + secondTraversal + " traversals");
 		
 		
 	}
