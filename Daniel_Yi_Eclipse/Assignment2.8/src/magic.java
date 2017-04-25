@@ -9,7 +9,7 @@ public class magic {
 		
 		Scanner keyboard = new Scanner(System.in);
 		String input = keyboard.nextLine();
-		
+		//CharAt of Inputs
 		char firstLetter = input.charAt(0);
 		char secondLetter = input.charAt(1);
 		char thirdLetter = input.charAt(2);

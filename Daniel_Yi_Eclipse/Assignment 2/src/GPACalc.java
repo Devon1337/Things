@@ -5,6 +5,7 @@ public class GPACalc {
 		// TODO Auto-generated method stub
 
 		Scanner keyboard = new Scanner(System.in);
+		//Doubles of Grades and Credit
 		double c1;
 		double c2;
 		double c3;
@@ -12,6 +13,7 @@ public class GPACalc {
 		double cg2;
 		double cg3;
 		
+		//Credit and Grade put in by Scanner Input
 		c1 = keyboard.nextDouble(); 
 		System.out.println("Enter the first course credits: " + c1);
 		cg1 = keyboard.nextDouble();

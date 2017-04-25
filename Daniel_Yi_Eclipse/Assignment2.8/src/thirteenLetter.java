@@ -9,7 +9,7 @@ public class thirteenLetter {
 		String input = keyboard.nextLine();
 		
 		
-		
+		//location of letters and identifying letters
 		int middleLetterNumb = input.length()/2;
 		String lastThreeLetters = input.substring(input.length()-3);
 		char secondLetter = input.charAt(1);
@@ -24,7 +24,7 @@ public class thirteenLetter {
 		System.out.print("The word backwards is: ");
 		
 	
-	
+
 		for(int x=(input.length()-1); x > 0; x--) {
 		
 		System.out.print(input.charAt(x));
