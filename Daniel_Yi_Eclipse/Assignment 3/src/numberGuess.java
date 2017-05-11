@@ -11,12 +11,12 @@ public class numberGuess {
 		Random r1 = new Random();
 		
 		//int of random generated number
-		int firstDigit = r1.nextInt(101);
-
+		int firstDigit = 62;
+			//	r1.nextInt(101);
+		
 		//Boolean for true and false statements for each hints
 		boolean question1 = (firstDigit>50);
-		boolean question2 = (firstDigit%5==0 && (firstDigit%10!=0) || (firstDigit/10>4.9) || (firstDigit/10<6));
-		boolean question3;
+		boolean question2 = (firstDigit%5==0 && (firstDigit%10!=0) || (firstDigit/10>4.9) && (firstDigit/10<6));
 		boolean even = firstDigit%2==0;
 		
 		System.out.println("Number is even: " + even);
