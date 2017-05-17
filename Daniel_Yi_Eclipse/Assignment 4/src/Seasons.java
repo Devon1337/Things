@@ -7,50 +7,66 @@ public class Seasons {
 		//Scanner
 		Scanner input = new Scanner(System.in);
 		System.out.println("Are you in the Northern or Southern Hemisphere? \n 1.) North \n 2.) South: ");
-		
 		//user input/answer for Hemisphere
 		int answer;
 		answer = input.nextInt();
-		//Intergers for the Hemispheres
-		int North = answer;
-		int South = answer + 12;
-		
-		
-		//booleans for Hemisphere
-		//boolean northHemi = answer==north;
-		//boolean southHemi = answer==south;
-		
 		System.out.println("What month it is? (1-12)");
 		//user input/answer for the month
 		int month;
 		month = input.nextInt();
 		
-		int lastNorth = North+month;
 		//Switches for Northern Hemisphere
-		switch(lastNorth){
-			case 2: 
+	if(answer==1){
+	switch(month){
+			case 1: 
+			case 2:
+			case 12:
+				System.out.println("It is Winter");
+				break;
 			case 3:
-			case 13:
-				//boolean winter12 = month == 12 && northHemi;
-				System.out.println("It is winter");
+			case 4:
+			case 5:
+				System.out.println("It is Spring");
 				break;
-		
-				
-				
+			case 6:
+			case 7:
+			case 8:
+				System.out.println("It is Summer");
+				break;
+			case 9:
+			case 10:
+			case 11:
+				System.out.println("It is Fall");
+				break;
+	}
+	}		
+		//Switches for Southern Hemisphere
+		if(answer==2){
+			switch(month){
+			case 1:
+			case 2:
+			case 12:
+				System.out.println("It is Summer");
+				break;
+			case 3:
+			case 4:
+			case 5:
+				System.out.println("It is Fall");
+				break;
+			case 6:
+			case 7:
+			case 8:
+				System.out.println("It is Winter");
+				break;
+			case 9:
+			case 10:
+			case 11:
+				System.out.println("It is Spring");
+				break;
+		}
 		}
 		
-		int lastSummer = South+month;
-		//Switches for Souther Hemisphere
-		switch(lastSummer){
-			case 16:
-			case 15:
-			case 26:
-				System.out.println("It is summer");
-				break;
-		}
-	
-		System.out.println(lastSummer);
-		System.out.println(lastNorth);
+		
 	}
 
 }

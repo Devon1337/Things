@@ -5,22 +5,29 @@ public class whileLoops {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
+		System.out.println("Type in a number when to stop: ");
 		Scanner input = new Scanner (System.in);
-		
-		Random rGenerator = new Random();
-		
-		int RanNumber = rGenerator.nextInt(10);
-		int counter = 0;
-		int userNumber = 0;
-		while (userNumber !=1){
-				counter++;
-				System.out.println(RanNumber);
-				RanNumber = rGenerator.nextInt(10);
+		int userInput = input.nextInt();
+		int counter = 1;
+		int total=1;
+			while (counter < userInput)
+			{
 				
-				System.out.println("Stop??");
-				userNumber = input.nextInt();
-		}
-		System.out.println(counter);
+				total =total*counter;
+				System.out.println("the total is " + total);
+				counter++;
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			}
+			
 	}
 
 }

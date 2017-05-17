@@ -51,6 +51,9 @@ public class pokemon {
 		System.out.println(AttackID.get(1));
 		System.out.println();
 		System.out.println();
+		int menu = keyboard.nextInt();
+		
+		
 	}
 	
 	public static void clearScreen() {
@@ -75,7 +78,7 @@ public class pokemon {
 		AttackID.put(1, "ThunderBolt");
 		AttackType.put(1, "mBase");
 		
-		baseDamageSetup(0, 2);
+		baseDamageSetup(1, 2);
 	}
 	
 	public static void baseDamageSetup(int pokeID, int PokeBaseAttack) {
