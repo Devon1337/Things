@@ -10,9 +10,7 @@ Scanner userInput = new Scanner (System.in);
 		int randomNumber;
 		randomNumber = rNumber.nextInt(100)+1;
 		
-		
 		int Answer;
-	
 		
 		boolean gotIt = false;
 		
