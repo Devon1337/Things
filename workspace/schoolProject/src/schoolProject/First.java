@@ -39,12 +39,11 @@ public class First {
 		
 		int extraNumber;
 		while (total<maxNumber){
-			requirement=(maxPool*counter)+primary;
+			requirement=(maxPool*(counter-1)+primary);
 			answer = userInput.nextInt();
 			goalNumber = (maxPool*counter)+primary;
 			extraNumber = (total+answer)-answer;
 			formula =(goalNumber)-total;
-			int FinalTotal = total;
 		if(answer<=maxPool&&answer>=minPool){
 			total=answer+total;
 			remainder=maxNumber-total;
@@ -52,7 +51,7 @@ public class First {
 			System.out.println("Remaining number: " + remainder);
 			formula =(goalNumber)-total;
 			
-		}if (total<primary&&primary!=0&&primary>=minPool&&counter==2){
+		}if (total<primary&&primary!=0&&primary>=minPool){
 			computerAnswer = primary;
 			total = computerAnswer + total;
 			remainder=maxNumber-total;
@@ -78,7 +77,7 @@ public class First {
 			System.out.println("Computer inputed: " + computerAnswer);
 			System.out.println("Remaining number: " + remainder);
 			//while (requirement<=total){
-		}if (requirement<=FinalTotal){
+		}if (requirement<=total){
 			
 			counter++;
 		//}	
